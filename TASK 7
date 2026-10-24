@@ -1,1 +1,9 @@
+def calculate_payment(quantity, rate):
+    if quantity < 0 or rate < 0:
+        return "Invalid input"
+    return quantity * rate
 
+print("Test 1:", calculate_payment(10, 30))
+print("Test 2:", calculate_payment(8, 25))
+print("Test 3:", calculate_payment(-5, 30))
+print("Test 4:", calculate_payment(0, 30))
