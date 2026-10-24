@@ -1,1 +1,19 @@
+from decimal import Decimal
 
+def calculate_payment(quantity, rate):
+    return quantity * rate
+
+quantity = Decimal("10")
+original_rate = Decimal("35.00")
+summer_rate = Decimal("36.00")
+bonus = Decimal("7.50")
+
+original_payment = calculate_payment(quantity, original_rate)
+summer_payment = calculate_payment(quantity, summer_rate)
+bonus_payment = summer_payment + bonus
+
+print("Original rate: ₹", original_rate)
+print("Summer rate: ₹", summer_rate)
+print("Original payment: ₹", original_payment)
+print("Summer payment: ₹", summer_payment)
+print("Payment with bonus: ₹", bonus_payment)
